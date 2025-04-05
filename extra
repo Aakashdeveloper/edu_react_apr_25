@@ -1,0 +1,122 @@
+https://code.visualstudio.com/  > Install
+https://git-scm.com/downloads > Install
+https://nodejs.org/en > Install
+https://www.postman.com/ > Install
+https://github.com/ > Signup
+https://github.com/Aakashdeveloper > Follow
+
+
+//Prerequest
+HTML
+CSS
+Basic Javascript
+(ifelse, function,loop,array,object,variable)
+
+
+Npm
+React = 4
+Mock API> Dummy Api
+json-server
+React_hooks -1
+Loginapp
+React-GraphQL-1
+Github
+Deployment
+-> MERN
+-> Netlify
+-> ReactPy
+-> Nginx
+Testing Jest Enzime
+/////////////////////////
+-> Aws
+-> Docker
+-> Jenkins
+HOC
+
+React-Redux =1
+Basic React Native=1
+///////Walkthrough///////
+React-Saga -1
+
+--------NOT Backend--------------
+API
+> GraphQL
+> Login/Logout
+> Zomato
+
+
+Node Package Manager
+
+var movieName = "Jab We met"
+var movieRating = 8.9
+var movielang = "Hindi"
+
+var movieName = "Avengers"
+var movieRating = 8.5
+var movielang = "English"
+
+var movie = {
+    name:"Jab We Met",
+    rating:8.9
+    lang:"Hindi"
+}
+
+JSON
+> Javascript Object Notation
+(way to represent the data)
+
+var movies = [
+    {
+        name:"Jab We Met",
+        rating:8.9
+        lang:"Hindi"
+    },
+    {
+        name:"Avengers",
+        rating:8.5
+        lang:"English"
+    }
+]
+
+------------------
+package.json
+> Entry point to the app
+> All the packages installed with help of this file
+> All package name avaible
+> All the command(start,test,build)
+> meta data (description,verison,name)
+
+//step to generate the package.json
+**NodejS must be install in laptop
+> go inside the folder using terminal
+> npm init
+> answer all questions
+> type yes
+
+//step to install package
+**NodejS must be install in laptop
+> go inside the folder using terminal
+> npm i packagename
+
+
+React 
+React-dom
+React-script
+
+
+Single Page application
+
+React is javascript lib which help to build Single Page application
+
+///step to generate the reactapp
+(one time step)
+> open cmd as admin
+> npm i -g create-react-app
+
+(every time we need new app)
+> go inside the folder
+> create-react-app appname
+
+
+final Project > 80%
+class attention > 20%
