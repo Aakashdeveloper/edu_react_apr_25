@@ -120,3 +120,39 @@ React is javascript lib which help to build Single Page application
 
 final Project > 80%
 class attention > 20%
+
+Virtual Dom
+Diffing Algo
+Reconciliation
+
+
+Component
+
+classComponent
+> logical component
+> Api calling, function
+
+functional Component
+> Dumb Component
+> display
+
+functional Component + Hooks
+
+
+function add(a,b){
+    let out = [a,b]
+    return out
+}
+
+add(1,2)
+2
+
+State
+> Act like a local variable
+> Every Component can have it own state
+> any data interaction should happen through state
+> With every State Change component will rerender
+
+Props
+> Help to transfer data between nested component
+> Value of props  will not change it is immutable
