@@ -3,7 +3,7 @@ import './Header.css';
 
 const Header = (props) => {
     const [title] = useState("React Search App");
-    //const [count,setCount] = useState(0);
+    //const [count,setCount] = useState();
     const [keyword,setKeyword] = useState('User Input Here')
 
     const handleChange = (event) =>{
