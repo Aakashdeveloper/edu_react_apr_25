@@ -3,24 +3,21 @@ import './Header.css';
 
 class Header extends Component{
 
-    constructor(){
-        super()
+    constructor(props){
+        super(props)
         this.state={
             title:"React Search App",
             count:0,
-            keyword:'User Input here'
+            keyword:'User Input Here'
         }
     }
 
-    handleCounter= (event) => {
-        console.log(event)
-        this.setState({count:this.state.count+1})
-        
-    }
+  
 
     handleChange = (event) =>{
-        console.log(event.target.value)
-        this.setState({keyword:event.target.value})
+        //console.log(event.target.value)
+        this.setState({keyword:event.target.value?event.target.value:'User Input Here'})
+        this.props.userText(event.target.value)
     }
     
    
@@ -31,8 +28,7 @@ class Header extends Component{
                 <div className="logo">{this.state.title}</div>
                 <input onChange={this.handleChange}/>
                 <div style={{fontSize:'20px',color:'white'}}>{this.state.keyword}</div>
-                <h2>{this.state.count}</h2>
-                <button onClick={this.handleCounter}>Counter</button>
+              
                 <hr/>
             </header>
           
@@ -42,3 +38,12 @@ class Header extends Component{
 }
 
 export default Header;
+
+
+// handleCounter= (event) => {
+//     console.log(event)
+//     this.setState({count:this.state.count+1})
+    
+// }
+// <h2>{this.state.count}</h2>
+// <button onClick={this.handleCounter}>Counter</button>

@@ -1,0 +1,26 @@
+import React,{Component} from 'react';
+//import ReactDOM from 'react-dom/client';
+import {createRoot} from 'react-dom/client';
+import Header from './component/Header';
+import Footer from './component/Footer';
+
+class App extends Component{
+    render(){
+        return(
+            <div>
+                <Header/>
+                <hr/>
+                <h1>Hiiii</h1> 
+                <h2>Developer Funnel</h2>
+                <hr/>
+                <Footer/>
+            </div>
+           
+        )
+    }
+}
+
+createRoot(document.getElementById('root')).render(<App/>)
+// const container = document.getElementById('root');
+// const root = ReactDOM.createRoot(container);
+// root.render(<App/>)

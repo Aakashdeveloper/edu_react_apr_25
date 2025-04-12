@@ -7,6 +7,7 @@ function Footer(props){
     const {month,year} = props
     return(
         <footer>
+            <hr/>
             <center>
             {/* <h3>&copy; DeveloperFunnel {props.year} {props.month}</h3> */}
             <h3>&copy; DeveloperFunnel {month} {year}</h3>

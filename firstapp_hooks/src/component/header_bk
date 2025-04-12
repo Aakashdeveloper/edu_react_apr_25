@@ -1,0 +1,27 @@
+import React from 'react';
+
+function Header(){
+
+    const myStyle={
+        header:{
+            backgroundColor:'teal',
+            textAlign:'center'
+        },
+        logo:{
+            fontSize:'30px',
+            color:'white'
+        }
+    }
+
+    return(
+        <header style={myStyle.header}>
+            <div style={myStyle.logo}>Developer Funnel</div>
+            <input/>
+            <div style={{fontSize:'20px',color:'white'}}>User Text Here</div>
+            <hr/>
+        </header>
+      
+    )
+}
+
+export default Header;

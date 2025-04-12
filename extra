@@ -156,3 +156,27 @@ State
 Props
 > Help to transfer data between nested component
 > Value of props  will not change it is immutable
+
+
+var a = [2,4,5,6,8,11,4]
+a.map((data) => {return data*2})
+[4, 8, 10, 12, 16, 22, 8]
+
+var a = [2,4,5,6,8,11,4]
+a.filter((data) => {return data>5})
+[6, 8, 11]
+
+parent > child 
+props
+
+child > parent
+props with callback
+
+
+function add(1,2){
+    return a+b
+}
+
+add(1,2)
+
+
