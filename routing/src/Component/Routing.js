@@ -7,6 +7,7 @@ import Home from './Home';
 import Post from './Post';
 import Profile from './Profile';
 import PostDetails from './PostDetails';
+const NotFound = () =>  <h1>404-Page Not Found</h1>
 
 
 const Routing = () => {
@@ -17,7 +18,10 @@ const Routing = () => {
            <Route path="/" element={<Main/>}>
                <Route index element={<Home/>}/>
                <Route path="post" element={<Post/>}/>
+               <Route path="post/:topic" element={<PostDetails/>}/>
                <Route path="profile" element={<Profile/>}/>
+               {/* Catch all routes for 404 */}
+               <Route path="*" element={<NotFound/>}/>
            </Route>
        </Routes>
        <Footer/>

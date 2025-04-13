@@ -2,9 +2,13 @@ import React from 'react';
 
 const Footer = () => {
     return(
-        <div>
-            <h2>Footer</h2>
-        </div>
+        <footer>
+            <hr/>
+            <center>
+                <h4>&copy; Developer Funnel 2025</h4>
+            </center>
+            
+        </footer>
     )
 }
 export default Footer
