@@ -211,3 +211,24 @@ not complusory to pass
 (get) allorder>            
        
 (get) restaurants>         http://3.17.216.66:4000/restaurants
+
+https://raw.githubusercontent.com/Aakashdeveloper/Aakashdeveloper/refs/heads/master/README.md
+
+
+var a = 10
+var b = "my age is "+a
+"my age is 10"
+
+//es6
+var a = 10
+var b = `my age is ${a}`
+"my age is 10"
+
+
+C > Create (Post)
+R > Read   (Get)
+U > Update (Put)
+D > Delete (Delete)
+
+async await
+sessionStorage

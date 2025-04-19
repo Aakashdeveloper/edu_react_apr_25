@@ -1,0 +1,55 @@
+import {useState,useEffect} from 'react';
+import './Search.css';
+
+const base_url = process.env.REACT_APP_API_URL
+
+const Search = () => {
+  
+    const [location,setLocation] = useState([])
+    const [count,setCount] = useState(0)
+    const [count1,setCount1] = useState(0)
+
+    const handleCounter= () => {
+        setCount(count+1)
+    }
+    const handleCounter1= () => {
+        setCount1(count1+1)
+    }
+
+
+    // any thing you want on page load
+    //fetch axios promises async/await
+    //lifecycle
+    // componentWillMount > when first time component load
+    // componentDidUpdate > when state change happen
+    // componentWillUnmount > When we leave the component
+
+    useEffect(() => {
+        console.log("on load")
+    },[count])
+    
+
+    return(
+        <div className='search'>
+           <div id="logo">
+               <span>D!</span>
+            </div>
+            <div id="heading">
+                Search Place Near To You
+            </div>
+            <div id="dropdown">
+                <select id="city-dropdown">
+                    <option>----SELECT CITY----</option>
+                </select>
+                <select className="restSelect">
+                    <option>----SELECT Restaurants----</option>
+                </select>
+                <h2>{count}</h2>         
+                 <button onClick={handleCounter}>Counter</button>
+
+            </div>
+        </div>
+    )
+}
+
+export default Search
