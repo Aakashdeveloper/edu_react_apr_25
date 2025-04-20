@@ -4,13 +4,15 @@
 }
 
 .tileImage{
-    width:48%;
+    width: 500px !important;
+    height: 400px !important;
+    margin-top: 2%;
     float: left;
 }
 
 .tileContent{
     width:50%;
-    margin-left: 2%;
+    margin-left: 5%;
     float: left;
 }
 
@@ -19,6 +21,10 @@
     width:95%;
     margin-left: 3%;
     margin-top: 3%;
+}
+.sliderImage{
+    height: 400px !important;
+    width: 500px !important;
 }
 
 

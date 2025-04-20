@@ -12,6 +12,9 @@
     "react-dom": "^19.1.0",
     "react-router-dom": "^7.5.0",
     "react-scripts": "5.0.1",
+    "react-slick": "^0.30.3",
+    "react-tabs": "^6.1.0",
+    "slick-carousel": "^1.8.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

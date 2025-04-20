@@ -1,5 +1,6 @@
 import {Link} from 'react-router-dom';
 
+
 const ListingDisplay = (props) => {
 
     const renderData=({listData}) => {
