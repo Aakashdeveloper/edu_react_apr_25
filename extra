@@ -6,6 +6,7 @@ https://github.com/ > Signup
 https://github.com/Aakashdeveloper > Follow
 
 
+
 //Prerequest
 HTML
 CSS
@@ -235,3 +236,7 @@ sessionStorage
 
 async
 await
+
+//dummy api
+npm i -g json-server
+json-server --watch data.json --port 7834

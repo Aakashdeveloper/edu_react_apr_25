@@ -17,6 +17,17 @@ class MenuDisplay extends Component{
 
     }
 
+    renderCart = (orders) => {
+        console.log(">>>",orders)
+        if(orders){
+            return orders.map((item,index) => {
+                return(
+                    <b key={index}>{item} &nbsp;</b>
+                )
+            })
+        }
+    }
+
     renderMenu = ({menuData}) => {
         if(menuData){
             return menuData.map((item) => {
@@ -51,7 +62,7 @@ class MenuDisplay extends Component{
             <>
                 <div className='col-md-12 bg-success'>
                     <h3>Item Added</h3>
-                    <h3>Item Number  Added</h3>
+                    <h3>Item Number {this.renderCart(this.orderId)}  Added</h3>
                 </div>
                 <div className='col-md-12 bg-info'>
                     {this.renderMenu(this.props)}
