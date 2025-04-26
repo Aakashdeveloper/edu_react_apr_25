@@ -18,11 +18,14 @@ const PlaceOrder = () => {
         menuItem:""
     })
 
+    // comman handle change for all input
     const handleChange= (event) => {
         setFormData({...formData,[event.target.name]:event.target.value})
     }
     const navigate = useNavigate()
+
     useEffect(() => {
+        // calling post api to get menu details
         const menuItem = sessionStorage.getItem('menu');
         console.log(menuItem)
         const orderId = menuItem ? menuItem.split(',').map(Number):[]
@@ -36,6 +39,7 @@ const PlaceOrder = () => {
         })
         .then((res) => res.json())
         .then((data) => {
+            // adding total price from data
             let totalPrice = 0;
             data.forEach((item) => {
                 totalPrice += parseFloat(item.menu_price)
@@ -50,6 +54,7 @@ const PlaceOrder = () => {
 
     },[])
 
+    // display menu item we selected
     const renderMenu = (data) => {
         if(data){
             return data.map((item) => (
@@ -63,6 +68,7 @@ const PlaceOrder = () => {
         }
     }
 
+    // place order we are using dummy api
     const placeOrder = () => {
         const orderData = {
             ...formData,
