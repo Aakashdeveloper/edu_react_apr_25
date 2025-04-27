@@ -19,9 +19,10 @@ React = 4
 Mock API> Dummy Api
 json-server
 React_hooks -1
-///////////////////
 Loginapp
 React-GraphQL-1
+///////////////////
+React-Redux =1
 
 Github
 Deployment
@@ -36,7 +37,7 @@ Testing Jest Enzime
 -> Jenkins
 HOC
 
-React-Redux =1
+
 Basic React Native=1
 ///////Walkthrough///////
 React-Saga -1

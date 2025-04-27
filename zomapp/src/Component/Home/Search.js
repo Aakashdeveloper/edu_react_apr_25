@@ -1,28 +1,30 @@
 import {useState,useEffect} from 'react';
+import useFetchData from '../apiCallingHook';
 import './Search.css';
 
 const base_url = process.env.REACT_APP_API_URL
 
 const Search = () => {
   
-    const [location,setLocation] = useState([])
+    //const [location,setLocation] = useState([])
     const [restaurants,setRestaurants] = useState([])
+    const location =  useFetchData(`${base_url}/location`)
 
-    useEffect(() => {
-        console.log("on load")
-        //api calling on page load
-        fetch(`${base_url}/location`,{method:'GET'})
-        //return promise
-        .then((res) => res.json())
-        //return data
-        .then((data) => {
-            console.log(data)
-            setLocation(data)
-        })
-        .catch((err) => {
-            console.log(err)
-        })
-    },[])
+    // useEffect(() => {
+    //     console.log("on load")
+    //     //api calling on page load
+    //     fetch(`${base_url}/location`,{method:'GET'})
+    //     //return promise
+    //     .then((res) => res.json())
+    //     //return data
+    //     .then((data) => {
+    //         console.log(data)
+    //         setLocation(data)
+    //     })
+    //     .catch((err) => {
+    //         console.log(err)
+    //     })
+    // },[])
 
     const renderCity = (data) => {
         if(data){
