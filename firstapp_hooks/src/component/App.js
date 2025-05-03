@@ -3,6 +3,7 @@ import Header from './Header';
 import Footer from './Footer';
 import JSON from '../data.json';
 import ProductDisplay from './ProductDisplay';
+import HookList from './hookDisplay';
 
 const App =() => {
     const [productData] = useState(JSON)
@@ -25,7 +26,8 @@ const App =() => {
     return(
         <>
             <Header userText={(data) => {filterProduct(data)}}/>
-            <ProductDisplay products={filteredData}/>
+            <HookList/>
+            {/* <ProductDisplay products={filteredData}/> */}
             <Footer year="2025" month="April"/>
         </>
        
