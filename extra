@@ -22,23 +22,23 @@ React_hooks -1
 Loginapp
 React-GraphQL-1
 React-Redux =1
+UseMemo
 ///////////////////
-
-
 Github
 Deployment
 -> MERN
 -> Netlify
 -> ReactPy
 -> Nginx
-Testing Jest Enzime
+-> Jenkins
 /////////////////////////
 -> Aws
 -> Docker
--> Jenkins
+
+
+
+Testing Jest Enzime
 HOC
-
-
 Basic React Native=1
 ///////Walkthrough///////
 React-Saga -1
