@@ -27,7 +27,7 @@ const App =() => {
         <>
             <Header userText={(data) => {filterProduct(data)}}/>
             <HookList/>
-            {/* <ProductDisplay products={filteredData}/> */}
+            <ProductDisplay products={filteredData}/>
             <Footer year="2025" month="April"/>
         </>
        

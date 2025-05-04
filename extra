@@ -23,7 +23,6 @@ Loginapp
 React-GraphQL-1
 React-Redux =1
 UseMemo
-///////////////////
 Github
 Deployment
 -> MERN
@@ -34,12 +33,9 @@ Deployment
 /////////////////////////
 -> Aws
 -> Docker
-
-
-
+Basic React Native=1
 Testing Jest Enzime
 HOC
-Basic React Native=1
 ///////Walkthrough///////
 React-Saga -1
 
@@ -269,3 +265,10 @@ https://app.netlify.com/
 
 json-server --watch db.json --port 9088
 node app.js
+
+
+npm i -g create-react-native-app
+create-react-native-app appname
+
+
+expo go
